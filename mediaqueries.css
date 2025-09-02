@@ -1,0 +1,166 @@
+@media (max-width:991px) {
+    nav ul {
+        display: none;
+        /* Hide menu items on mobile */
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+        /* Show hamburger on small screens */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .firstsec>div {
+        width: 50%;
+    }
+
+    .leftsec {
+        font-size: 1.9rem;
+        margin: 0px 50px 50px 120px;
+    }
+
+    .leftsec .button {
+        padding: 5px 0px;
+    }
+
+    .leftsec {
+        font-size: 1.5rem;
+        margin: 0px 50px 50px 90px;
+    }
+
+    .leftsec .btn {
+        padding: 5px;
+        font-size: 16px;
+
+    }
+
+    .rightsec img {
+        width: 90%;
+
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+
+    .boxes-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* one column layout */
+        justify-items: center;
+    }
+
+    .footer-first h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/* 📱 Mobile view pe .leftsec ko center kar do */
+@media (max-width: 768px) {
+    .firstsec {
+        flex-direction: column-reverse;
+    }
+
+    .firstsec>div {
+        width: 100%;
+    }
+ .hamburger {
+        margin-right: 0px; 
+    }
+
+    .leftsec {
+        text-align: center;
+        /* text center align */
+        margin: 20px auto;
+        /* left/right margin auto for centering */
+        max-width: 90%;
+        /* text container ko limit karo */
+    }
+
+    .leftsec .button {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .leftsec .btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .boxes-container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+}
+
+@media (max-width:467px) {
+    .left {
+        font-size: 1rem;
+    }
+
+    .leftsec {
+        font-size: 1.2rem;
+    }
+
+    .leftsec .btn {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .text-grey {
+        font-size: 12px;
+    }
+
+    .secondSection {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .boxes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .vertical-text {
+        font-size: 17px;
+    }
+
+    .vertical-desc {
+        font-size: 14px;
+    }
+
+    .flex {
+        padding: 10px 7px;
+    }
+
+    .flex {
+        flex-direction: column;
+        /* stack items vertically */
+        align-items: center;
+        /* center align content */
+        padding: 20px;
+        /* reduce padding */
+        text-align: center;
+        /* center text */
+    }
+
+    .flex>div {
+        width: 100%;
+        /* take full width */
+        margin-bottom: 20px;
+        /* spacing between sections */
+    }
+
+    .footer-right {
+        font-size: 14px;
+        /* slightly smaller text */
+        padding: 10px 0;
+    }
+}
