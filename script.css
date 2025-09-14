@@ -58,6 +58,7 @@ body {
 
 .navbar .right ul li a:hover::after {
     width: 100%;
+    
 }
 
 /* Hamburger */
@@ -703,6 +704,8 @@ h1 {
 
     .navbar .right ul.active {
         display: flex;
+        text-align: center;
+    
     }
 
     .hamburger {
@@ -752,4 +755,5 @@ h1 {
     .vertical-desc {
         font-size: 0.75rem;
     }
+
 }
