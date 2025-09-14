@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aiman-developer protfolio</title>
     <link rel="stylesheet" href="script.css">
-    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,15 +17,15 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar glass">
             <div class="left">Aiman's Portfolio</div>
             <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Servies</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -39,39 +38,39 @@
 
     <main>
         <section class="firstsec">
-            <div class="leftsec">
-                Hi, This is <span class="maroon">Aiman Khalid</span>
-                <div>
-                    and I am a passionate
-                </div>
-                <span id="element"></span>
+            <div class="leftsec glass">
+                <h1>Hi, This is <span class="maroon">Aiman Khalid</span></h1>
+                <h2>and I am a <span id="typed"></span></h2>
+                <p>Creating modern, fast, and unique web experiences that stand out.</p>
                 <div class="button">
-                    <button class="btn"><a href="Aiman Khalidsample .pdf" download="Aiman Khalid.pdf">Download
-                            Resume</a></button>
-                    <button class="btn"><a href="https://github.com/Aiman-sandhu ">Visit Github</a></button>
+                    <a href="sourses/Aiman Khalidsample.pdf" download class="btn">Download Resume</a>
+                    <a href="https://github.com/Aiman-sandhu" target="_blank" class="btn-outline">Visit Github</a>
                 </div>
             </div>
 
             <div class="rightsec">
-                <img src="bg.jpg" alt="image" srcset="">
+                <div class="circle-glow">
+                    <img src="sourses/dp.jpg" alt="Aiman Khalid Profile">
+                </div>
             </div>
         </section>
         <hr>
-
-
         <section class="secondSection">
-            <span class="text-grey">What I have done so far</span>
+            <span class="text-gray">What I have done so far</span>
             <h1>Work Experiences</h1>
 
             <div class="boxes-container">
                 <div class="box">
                     <div class="vertical">
                         <div class="vertical-text">
-                            HTML Developer (2023-2024)
+                            HTML Developer
+                            <div>(2023-2024)</div>
                         </div>
+                        <img src="html_1532556.png" width="150px">
                         <div class="vertical-desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quia. Quaerat,
-                            
+                            Built responsive and semantic websites using HTML5, ensuring accessibility and clean
+                            structure.
+
                         </div>
                     </div>
                 </div>
@@ -79,10 +78,14 @@
                 <div class="box">
                     <div class="vertical">
                         <div class="vertical-text">
-                            CSS Developer (2022-2023)
+                            CSS Developer
+                            <div>(2022-2023)</div>
                         </div>
+                        <img src="css-3_5968242.png" width="150px">
+
                         <div class="vertical-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, delectus. Quam, iste?
+                            Designed modern and interactive layouts using CSS3, Flexbox, Grid, and animations for smooth
+                            UX.
                         </div>
                     </div>
                 </div>
@@ -90,10 +93,12 @@
                 <div class="box">
                     <div class="vertical">
                         <div class="vertical-text">
-                            JavaScript Developer (2021-2022)
+                            JavaScript Developer (2024-2025)
                         </div>
+                        <img src="js_5968292.png" width="150px">
                         <div class="vertical-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, magni.
+                            Developed interactive web features, DOM manipulation, and dynamic content using JavaScript
+                            and ES6+.
                         </div>
                     </div>
                 </div>
@@ -101,69 +106,242 @@
                 <div class="box">
                     <div class="vertical">
                         <div class="vertical-text">
-                            React Developer (2020-2021)
+                            React Developer <div>(continuing...)</div>
                         </div>
+                        <img src="react.png" width="150px">
                         <div class="vertical-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptates!
+                            Building reusable components and dynamic web applications using React.js and modern state
+                            management.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <hr>
 
-        </div>
+        <section class="projects-section">
+            <h2>🚀 My Projects</h2>
+
+            <div id="projects" class="project-slider">
+                <!-- Project Item -->
+                <div class="project-item active">
+                    <div class="split-text">
+                        <h3>🎓 Student Report Card Demo</h3>
+                        <p>A simple student report card web app built with HTML, CSS, and JavaScript.
+                            Shows student marks, grades, and performance summary.
+                            Fully responsive and easy to customize for schools.</p>
+                        <div class="project-buttons">
+                            <a href="https://studentreportcards.netlify.app/" target="_blank" class="btn">Live Demo</a>
+                            <a href="https://github.com/Aiman-sandhu/student-report-card" target="_blank"
+                                class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="split-img">
+                        <img src="student record.png" alt="Student Report Card">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="split-text">
+                        <h3>⌨ Typing Speed Tester</h3>
+                        <p>A web-based tool to test typing speed and accuracy.
+                            Tracks words per minute (WPM) and typing errors.
+                            Lightweight, responsive, and easy to use.</p>
+                        <div class="project-buttons">
+                            <a href="https://typingspeedtester-wpm.netlify.app/" target="_blank" class="btn">Live
+                                Demo</a>
+                            <a href="https://github.com/Aiman-sandhu/Typing--speed-tester" target="_blank"
+                                class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="split-img">
+                        <img src="sourses/typing.png" alt="Typing Speed Tester">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="split-text">
+                        <h3>💰 Expense Tracker</h3>
+                        <p>A personal finance tracker to manage daily expenses.
+                            Adds, deletes, and monitors transactions easily.
+                            Helps users keep track of spending in real-time.</p>
+                        <div class="project-buttons">
+                            <a href="https://expensestracker-ap.netlify.app/" target="_blank" class="btn">Live Demo</a>
+                            <a href="https://github.com/Aiman-sandhu" target="_blank" class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="split-img">
+                        <img src="sourses/ex.png" alt="Temperature convertor">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="split-text">
+                        <h3>🎮 Guess the Number Game</h3>
+                        <p>A fun JavaScript-based game where users guess a secret number.
+                            Provides hints, score tracking, and restart option.
+                            Lightweight, interactive, and entertaining.</p>
+                        <div class="project-buttons">
+                            <a href="https://guess-gameweb.netlify.app/" target="_blank" class="btn">Live Demo</a>
+                            <a href="https://github.com/Aiman-sandhu/guessthenum-game" target="_blank"
+                                class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="split-img">
+                        <img src="sourses/guessnum.png" alt="Temperature convertor">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="split-text">
+                        <h3>🌡 Temperature Converter</h3>
+                        <p>Converts temperature between Celsius, Fahrenheit, and Kelvin.
+                            Simple, fast, and built with HTML, CSS, and JavaScript.
+                            Perfect mini-project for beginners.</p>
+                        <div class="project-buttons">
+                            <a href="https://temperature-convertor-websit.netlify.app/" target="_blank" class="btn">Live
+                                Demo</a>
+                            <a href="https://github.com/Aiman-sandhu/temperature-convertor" target="_blank"
+                                class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="split-img">
+                        <img src="temop.png" alt="Temperature convertor">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button id="prev">&#10094; Prev</button>
+                <button id="next">Next &#10095;</button>
+            </div>
         </section>
+        <hr>
+
+        <section id="about" class="about-section">
+            <h2>👨‍💻 About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Hi, I’m <span class="highlight">Aiman</span> — an aspiring
+                        <strong>Full-Stack Developer</strong> who loves turning ideas into real projects.
+                        I’ve built small but exciting things like a <em>Netflix clone</em>,
+                        <em>Spotify clone</em>, and my own portfolio page.
+                    </p>
+                    <div class="skills">
+                        <p>HTML <span>95%</span></p>
+                        <div class="skill-bar">
+                            <div style="width:95%"></div>
+                        </div>
+
+                        <p>CSS <span>90%</span></p>
+                        <div class="skill-bar">
+                            <div style="width:90%"></div>
+                        </div>
+
+                        <p>JavaScript <span>85%</span></p>
+                        <div class="skill-bar">
+                            <div style="width:85%"></div>
+                        </div>
+
+                        <p>React <span>75%</span></p>
+                        <div class="skill-bar">
+                            <div style="width:50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="sourses/dp.jpg" alt="Aiman Khalid">
+                </div>
+            </div>
+        </section>
+        <hr>
+     <section id="services" class="services-section">
+  <h2>💼 My Services</h2>
+
+  <div class="services-slider">
+    <!-- Prev Button -->
+    <button class="service-prev">⟨</button>
+
+    <!-- Scrollable Container -->
+    <div class="services-container">
+      <div class="service-box">
+        <h3>Frontend Development</h3>
+        <p>Building responsive and modern websites using HTML, CSS, JavaScript, and React.</p>
+      </div>
+      <div class="service-box">
+        <h3>Responsive Web Design</h3>
+        <p>Mobile-friendly, modern, and pixel-perfect websites built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-box">
+        <h3>Interactive Frontend Development</h3>
+        <p>Adding functionality with JavaScript like calculators, games, typing testers, and dynamic UIs.</p>
+      </div>
+      <div class="service-box">
+        <h3>UI/UX Design</h3>
+        <p>Designing clean, user-friendly interfaces with attention to detail and smooth experience.</p>
+      </div>
+      <div class="service-box">
+        <h3>Bug Fixing & Improvements</h3>
+        <p>Debugging issues, optimizing performance, and improving existing websites</p>
+      </div>
+      <div class="service-box">
+        <h3>React Development (Learning & Projects)</h3>
+        <p>Creating single-page applications and components using React.js (continuing to grow this skill).</p>
+      </div>
+    </div>
+
+    <!-- Next Button -->
+    <button class="service-next">⟩</button>
+  </div>
+</section>
+
+        <hr>
+        <section id="contact" class="contact-section">
+            <h2>📩 Contact Me</h2>
+            <p>Got a project in mind? Let's build something amazing together!</p>
+
+            <form action="abdullahamn80@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://github.com/Aiman-sandhu" target="_blank"><img src="sourses/gitwhite.png"
+                        width="50px"></a>
+                <a href="https://github.com/Aiman-sandhu" target="_blank"><img src="sourses/instagramcolor.png"
+                        width="50px"></a>
+                <a href="https://www.youtube.com/channel/UCDWoq7VktnUCtSMx4903BOA" target="_blank"><img
+                        src="sourses/youtube.png" width="50px"></a>
+                <a href="https://www.linkedin.com/in/aiman-khalid-387523380?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9dwOT7vzSSC8E4pscqkOoQ%3D%3D"
+                    target="_blank"><img src="sourses/linkedin_13170391.png" width="50px"></a>
+                <a href="mailto:abdullahamn80@gmail.com"><img src="sourses/emailcolor.png" width="50px"></a>
+            </div>
         </section>
     </main>
 
-
-    <footer>
-        <div class="flex">
-            <div class="footer-first">
-                <h3>Aiman's Developer Portfolio</h3>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Aiman Khalid | All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="https://github.com/Aiman-sandhu" target="_blank"><img src="sourses/gitwhite.png"
+                        width="20px"></a>
+                <a href="https://github.com/Aiman-sandhu" target="_blank"><img src="sourses/instagramcolor.png"
+                        width="20px"></a>
+                <a href="https://www.youtube.com/channel/UCDWoq7VktnUCtSMx4903BOA" target="_blank"><img
+                        src="sourses/youtube.png" width="20px"></a>
+                <a href="https://www.linkedin.com/in/aiman-khalid-387523380?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9dwOT7vzSSC8E4pscqkOoQ%3D%3D"
+                    target="_blank"><img src="sourses/linkedin_13170391.png" width="20px"></a>
+                <a href="mailto:abdullahamn80@gmail.com"><img src="sourses/emailcolor.png" width="20px"></a>
             </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Projects</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Projects</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Projects</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-right">
-            Copyright&copy; aiman's.com | All right reserved
         </div>
     </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Designer', 'Social Media Manager'],
-            typeSpeed: 50,
-        });
-    </script>
     <script src="java.js"></script>
 </body>
-
 
 </html>
